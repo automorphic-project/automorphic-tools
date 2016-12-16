@@ -5,9 +5,16 @@ path = config.localProject + "/"
 
 lijstje = list_text_files(path)
 
-short_titles = {'introduction' : 'Introduction',\
-'conventions' : 'Conventions,',\
-'sets' : 'Sets,',\
+short_titles = {'introduction':'Introduction',\
+'representationtheory':'Basic Representation Theory',\
+'algebraicgroups':'Lie and algebraic groups, and their homogeneous spaces',\
+'harmonicanalysis':'Harmonic analysis over local fields',\
+'automorphicforms':'Automorphic forms',\
+'periods':'Periods, theta correspondence, related methods',\
+'traceformulalocal':'The trace formula: local aspects',\
+'traceformulaglobal':'The trace formula: global aspects',\
+'arithmetic':'Arithmetic, reciprocity, Shimura varieties',\
+'geometric':'Geometric aspects',\
 'fdl' : 'GNU Free Documentation License,',\
 'index' : 'Auto Generated Index,'}
 

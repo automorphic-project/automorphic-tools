@@ -17,8 +17,9 @@ statistics.counts.updateLineCounts()
 print "Updating the page counts"
 statistics.counts.updatePageCounts()
 
-print "\nUpdating commit information"
-statistics.commits.updateCommits()
+#RESTORE STATISTICS WHEN READY
+#print "\nUpdating commit information"
+#statistics.commits.updateCommits()
 
 print "\nClearing bibliography"
 bibliography.update.clearBibliography()
