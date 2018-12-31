@@ -20,11 +20,12 @@ statistics.counts.updatePageCounts()
 #RESTORE STATISTICS WHEN READY
 #print "\nUpdating commit information"
 #statistics.commits.updateCommits()
+print "\nImporting titles"
+tags.titles.importTitles()
 
 print "\nClearing bibliography"
 bibliography.update.clearBibliography()
 print "Importing bibliography"
 bibliography.update.importBibliography()
 
-print "\nImporting titles"
-tags.titles.importTitles()
+

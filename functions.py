@@ -1,4 +1,5 @@
 import os
+import re
 
 # invert a dictionary mapping
 def invert_dict(dictionary):
@@ -615,17 +616,19 @@ def new_command(new, commands):
 # Silly function
 def get_tag_line(line):
 	line = line.rstrip()
-	return line.split(",")
-
+	raw = line.split(",")
+	return [x.strip() for x in raw]
+	
 # Get all active tags in the project
 def get_tags(path):
 	tags = []
 	tag_file = open(path + "tags/tags", 'r')
 	for line in tag_file:
-		if not line.find("#") == 0:
+		if not re.match("#|[ ]*\n",line):
 			tags.append(get_tag_line(line))
 	tag_file.close()
 	return tags
+
 
 def new_label(tags, label):
 	n = 0

@@ -1,5 +1,5 @@
 import sqlite3, sys
-
+import re
 import config, general
 from functions import *
 
@@ -48,7 +48,7 @@ def parse_tags(filename):
   tags = {}
 
   for line in tags_file:
-    if not line.startswith('#'):
+    if not re.match("#|[ ]*\n",line):
       (tag, label) = line.strip().split(',')
       tags[tag] = label
 
